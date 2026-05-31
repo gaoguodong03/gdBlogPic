@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Multi-agent is system-level collaboration</title>
+  <desc id="desc">Multiple agents coordinate through messages, tools, and shared state.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#263238"/></marker>
+    <style>
+      .bg{fill:#f8fafc}.title{font:800 54px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}.sub{font:500 26px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#475569}.label{font:800 29px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}.small{font:500 22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#475569}.agent{fill:#eef2ff;stroke:#4f46e5;stroke-width:4;rx:28}.tool{fill:#ecfdf5;stroke:#16a34a;stroke-width:4;rx:26}.state{fill:#fef9c3;stroke:#ca8a04;stroke-width:4;rx:26}.line{stroke:#263238;stroke-width:4;fill:none;marker-end:url(#arrow)}.soft{stroke:#64748b;stroke-width:3;stroke-dasharray:9 9;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="bg" width="1080" height="1350"/>
+  <text class="title" x="70" y="120">多 Agent：系统层面的协作</text>
+  <text class="sub" x="70" y="170">不只是“装成专家”，而是多个智能体真的分工运行。</text>
+  <rect class="agent" x="100" y="290" width="260" height="150"/>
+  <text class="label" x="155" y="355">Planner</text>
+  <text class="small" x="148" y="400">拆任务 / 定策略</text>
+  <rect class="agent" x="410" y="290" width="260" height="150"/>
+  <text class="label" x="470" y="355">Writer</text>
+  <text class="small" x="457" y="400">生成内容草稿</text>
+  <rect class="agent" x="720" y="290" width="260" height="150"/>
+  <text class="label" x="778" y="355">Reviewer</text>
+  <text class="small" x="780" y="400">审查 / 反馈</text>
+  <rect class="state" x="255" y="610" width="570" height="150"/>
+  <text class="label" x="425" y="675">Shared State</text>
+  <text class="small" x="360" y="720">任务状态、上下文、文件、记忆</text>
+  <rect class="tool" x="255" y="895" width="570" height="150"/>
+  <text class="label" x="455" y="960">Tools</text>
+  <text class="small" x="378" y="1005">搜索、代码、浏览器、数据库、API</text>
+  <path class="line" d="M360 365 L410 365"/>
+  <path class="line" d="M670 365 L720 365"/>
+  <path class="soft" d="M230 440 C260 540 330 580 430 610"/>
+  <path class="soft" d="M540 440 L540 610"/>
+  <path class="soft" d="M850 440 C820 540 750 580 650 610"/>
+  <path class="line" d="M540 760 L540 895"/>
+  <rect x="90" y="1155" width="900" height="96" rx="28" fill="#312e81"/>
+  <text x="130" y="1215" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="31" font-weight="800" fill="#fff">一句话：多 Agent 是应用系统的组织方式。</text>
+</svg>
