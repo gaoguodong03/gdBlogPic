@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="560" viewBox="0 0 1080 560" role="img" aria-labelledby="title desc">
+  <title id="title">MoE dispatch and combine</title>
+  <desc id="desc">Tokens are routed to selected experts and then combined back in original order.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#344054"/>
+    </marker>
+    <style>
+      .bg { fill: #fbfcfe; }
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #101828; font-size: 24px; font-weight: 650; }
+      .small { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475467; font-size: 18px; }
+      .token { fill: #eef4ff; stroke: #2e90fa; stroke-width: 2; rx: 12; }
+      .router { fill: #fff6ed; stroke: #f79009; stroke-width: 2; rx: 14; }
+      .expert { fill: #ecfdf3; stroke: #12b76a; stroke-width: 2; rx: 14; }
+      .combine { fill: #f4f3ff; stroke: #7a5af8; stroke-width: 2; rx: 14; }
+      .line { stroke: #344054; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .route1 { stroke: #2e90fa; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .route2 { stroke: #f79009; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .route3 { stroke: #12b76a; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect class="bg" width="1080" height="560"/>
+  <text class="title" x="54" y="58">Dispatch 与 Combine：MoE 的真实数据流</text>
+  <text class="small" x="54" y="92">Router 选择专家后，需要把 token 分发出去，再按权重合并回来。</text>
+  <rect class="token" x="70" y="150" width="96" height="52"/><text class="small" x="96" y="183">t1</text>
+  <rect class="token" x="70" y="222" width="96" height="52"/><text class="small" x="96" y="255">t2</text>
+  <rect class="token" x="70" y="294" width="96" height="52"/><text class="small" x="96" y="327">t3</text>
+  <rect class="token" x="70" y="366" width="96" height="52"/><text class="small" x="96" y="399">t4</text>
+  <rect class="router" x="246" y="230" width="142" height="108"/>
+  <text class="title" x="278" y="276">Router</text>
+  <text class="small" x="273" y="307">top-k</text>
+  <line class="line" x1="166" y1="176" x2="246" y2="258"/>
+  <line class="line" x1="166" y1="248" x2="246" y2="278"/>
+  <line class="line" x1="166" y1="320" x2="246" y2="298"/>
+  <line class="line" x1="166" y1="392" x2="246" y2="318"/>
+  <rect class="expert" x="500" y="128" width="150" height="70"/><text class="title" x="532" y="171">Expert 1</text>
+  <rect class="expert" x="500" y="244" width="150" height="70"/><text class="title" x="532" y="287">Expert 2</text>
+  <rect class="expert" x="500" y="360" width="150" height="70"/><text class="title" x="532" y="403">Expert 3</text>
+  <path class="route1" d="M 388 258 C 438 222, 456 176, 500 164"/>
+  <path class="route2" d="M 388 284 C 430 284, 454 280, 500 280"/>
+  <path class="route3" d="M 388 318 C 438 352, 456 388, 500 396"/>
+  <rect class="combine" x="770" y="230" width="150" height="108"/>
+  <text class="title" x="806" y="276">Combine</text>
+  <text class="small" x="792" y="307">加权合并</text>
+  <line class="line" x1="650" y1="164" x2="770" y2="252"/>
+  <line class="line" x1="650" y1="280" x2="770" y2="284"/>
+  <line class="line" x1="650" y1="396" x2="770" y2="316"/>
+  <rect class="token" x="978" y="258" width="70" height="52"/><text class="small" x="998" y="291">h'</text>
+  <line class="line" x1="920" y1="284" x2="978" y2="284"/>
+  <text class="small" x="500" y="486">难点：专家负载可能不均，热门专家会拖慢整个 batch。</text>
+</svg>
