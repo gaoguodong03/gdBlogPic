@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="560" viewBox="0 0 1080 560" role="img" aria-labelledby="title desc">
+  <title id="title">Distributed MoE all-to-all communication</title>
+  <desc id="desc">Tokens are exchanged across GPUs because experts are placed on different devices.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#344054"/>
+    </marker>
+    <style>
+      .bg { fill: #fbfcfe; }
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #101828; font-size: 24px; font-weight: 650; }
+      .small { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475467; font-size: 18px; }
+      .gpu { fill: #ffffff; stroke: #d0d5dd; stroke-width: 2; rx: 16; }
+      .expert { fill: #ecfdf3; stroke: #12b76a; stroke-width: 2; rx: 12; }
+      .token { fill: #eef4ff; stroke: #2e90fa; stroke-width: 2; rx: 10; }
+      .line { stroke: #344054; stroke-width: 2.6; fill: none; marker-end: url(#arrow); opacity: .86; }
+      .hot { stroke: #f04438; stroke-width: 3.2; fill: none; marker-end: url(#arrow); opacity: .9; }
+    </style>
+  </defs>
+  <rect class="bg" width="1080" height="560"/>
+  <text class="title" x="54" y="58">分布式 MoE：all-to-all 通信经常成为瓶颈</text>
+  <text class="small" x="54" y="92">专家分布在不同 GPU 上，token 会被跨设备发送到被选中的专家。</text>
+  <rect class="gpu" x="72" y="150" width="208" height="250"/>
+  <text class="title" x="118" y="190">GPU 0</text>
+  <rect class="expert" x="112" y="220" width="128" height="54"/><text class="small" x="143" y="254">Expert 0</text>
+  <rect class="token" x="104" y="314" width="52" height="40"/><text class="small" x="120" y="340">t1</text>
+  <rect class="token" x="168" y="314" width="52" height="40"/><text class="small" x="184" y="340">t2</text>
+  <rect class="gpu" x="326" y="150" width="208" height="250"/>
+  <text class="title" x="372" y="190">GPU 1</text>
+  <rect class="expert" x="366" y="220" width="128" height="54"/><text class="small" x="397" y="254">Expert 1</text>
+  <rect class="token" x="358" y="314" width="52" height="40"/><text class="small" x="374" y="340">t3</text>
+  <rect class="token" x="422" y="314" width="52" height="40"/><text class="small" x="438" y="340">t4</text>
+  <rect class="gpu" x="580" y="150" width="208" height="250"/>
+  <text class="title" x="626" y="190">GPU 2</text>
+  <rect class="expert" x="620" y="220" width="128" height="54"/><text class="small" x="651" y="254">Expert 2</text>
+  <rect class="token" x="612" y="314" width="52" height="40"/><text class="small" x="628" y="340">t5</text>
+  <rect class="token" x="676" y="314" width="52" height="40"/><text class="small" x="692" y="340">t6</text>
+  <rect class="gpu" x="834" y="150" width="208" height="250"/>
+  <text class="title" x="880" y="190">GPU 3</text>
+  <rect class="expert" x="874" y="220" width="128" height="54"/><text class="small" x="905" y="254">Expert 3</text>
+  <rect class="token" x="866" y="314" width="52" height="40"/><text class="small" x="882" y="340">t7</text>
+  <rect class="token" x="930" y="314" width="52" height="40"/><text class="small" x="946" y="340">t8</text>
+  <path class="line" d="M 156 314 C 248 258, 286 242, 366 244"/>
+  <path class="line" d="M 220 314 C 386 420, 666 418, 874 248"/>
+  <path class="line" d="M 410 314 C 476 294, 548 270, 620 248"/>
+  <path class="line" d="M 474 314 C 620 426, 794 428, 874 252"/>
+  <path class="hot" d="M 664 314 C 704 250, 778 232, 874 244"/>
+  <path class="hot" d="M 728 314 C 776 268, 826 248, 874 244"/>
+  <text class="small" x="72" y="468">如果许多 token 都路由到同一个远端专家，网络通信和热点专家会同时拖慢吞吐。</text>
+</svg>
