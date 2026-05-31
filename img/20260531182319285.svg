@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Role prompting is prompt-level role framing</title>
+  <desc id="desc">Role prompting changes the instruction frame for one model.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#263238"/></marker>
+    <style>
+      .bg{fill:#fffaf5}.title{font:800 54px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#321b09}.sub{font:500 26px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#7c4a1e}.label{font:800 30px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#321b09}.small{font:500 23px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#6b4e34}.card{fill:#fff;stroke:#fed7aa;stroke-width:4;rx:26}.prompt{fill:#ffedd5;stroke:#f97316;stroke-width:4;rx:26}.model{fill:#f8fafc;stroke:#64748b;stroke-width:4;rx:26}.out{fill:#ecfdf5;stroke:#16a34a;stroke-width:4;rx:26}.line{stroke:#263238;stroke-width:4;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="bg" width="1080" height="1350"/>
+  <text class="title" x="70" y="120">Role Prompting：提示词里的角色框架</text>
+  <text class="sub" x="70" y="170">同一个模型，被提示词要求“像某种角色一样回答”。</text>
+  <rect class="card" x="70" y="240" width="940" height="850"/>
+  <rect class="prompt" x="130" y="315" width="820" height="150"/>
+  <text class="label" x="170" y="375">Prompt</text>
+  <text class="small" x="170" y="425">“你现在是一名严谨的论文审稿人……”</text>
+  <line class="line" x1="540" y1="465" x2="540" y2="560"/>
+  <rect class="model" x="290" y="560" width="500" height="170"/>
+  <text class="label" x="425" y="628">同一个 LLM</text>
+  <text class="small" x="382" y="678">参数没有变，只是回答约束变了</text>
+  <line class="line" x1="540" y1="730" x2="540" y2="825"/>
+  <rect class="out" x="130" y="825" width="820" height="150"/>
+  <text class="label" x="170" y="885">Answer Style</text>
+  <text class="small" x="170" y="935">更像审稿人 / 产品经理 / 工程师的表达方式</text>
+  <rect x="110" y="1155" width="860" height="96" rx="28" fill="#7c2d12"/>
+  <text x="150" y="1215" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="31" font-weight="800" fill="#fff">一句话：Role Prompting 是给同一个模型“戴帽子”。</text>
+</svg>
