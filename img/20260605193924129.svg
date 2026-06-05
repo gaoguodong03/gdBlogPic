@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#fbfaf7"/>
+  <text x="64" y="76" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#12151c">Three ways to observe a GUI</text>
+  <text x="66" y="118" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#5d6470">Production systems usually combine all three instead of betting on one signal.</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="78" y="184" width="300" height="330" rx="16" fill="#e8f0fe" stroke="#1c5fd4" stroke-width="4"/>
+    <text x="118" y="240" font-size="30" font-weight="800" fill="#12151c">Structured</text>
+    <text x="118" y="286" font-size="22" fill="#12151c">DOM</text>
+    <text x="118" y="324" font-size="22" fill="#12151c">Accessibility tree</text>
+    <text x="118" y="362" font-size="22" fill="#12151c">UIAutomator</text>
+    <text x="118" y="430" font-size="19" fill="#4b5360">Precise and cheap,</text>
+    <text x="118" y="458" font-size="19" fill="#4b5360">but fails on hidden or</text>
+    <text x="118" y="486" font-size="19" fill="#4b5360">canvas-like interfaces.</text>
+    <rect x="450" y="184" width="300" height="330" rx="16" fill="#e9f8f2" stroke="#16a085" stroke-width="4"/>
+    <text x="490" y="240" font-size="30" font-weight="800" fill="#12151c">Visual</text>
+    <text x="490" y="286" font-size="22" fill="#12151c">Screenshot</text>
+    <text x="490" y="324" font-size="22" fill="#12151c">OCR</text>
+    <text x="490" y="362" font-size="22" fill="#12151c">Icon recognition</text>
+    <text x="490" y="430" font-size="19" fill="#4b5360">Broad coverage,</text>
+    <text x="490" y="458" font-size="19" fill="#4b5360">but grounding and</text>
+    <text x="490" y="486" font-size="19" fill="#4b5360">latency are hard.</text>
+    <rect x="822" y="184" width="300" height="330" rx="16" fill="#fff3db" stroke="#e09f2e" stroke-width="4"/>
+    <text x="862" y="240" font-size="30" font-weight="800" fill="#12151c">Hybrid</text>
+    <text x="862" y="286" font-size="22" fill="#12151c">Screenshot + DOM</text>
+    <text x="862" y="324" font-size="22" fill="#12151c">OCR + coordinates</text>
+    <text x="862" y="362" font-size="22" fill="#12151c">Element candidates</text>
+    <text x="862" y="430" font-size="19" fill="#4b5360">Best engineering tradeoff:</text>
+    <text x="862" y="458" font-size="19" fill="#4b5360">strong context plus</text>
+    <text x="862" y="486" font-size="19" fill="#4b5360">stable execution.</text>
+  </g>
+  <g stroke="#12151c" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M378 350 H440"/>
+    <path d="M428 334 L450 350 L428 366"/>
+    <path d="M750 350 H812"/>
+    <path d="M800 334 L822 350 L800 366"/>
+  </g>
+</svg>
