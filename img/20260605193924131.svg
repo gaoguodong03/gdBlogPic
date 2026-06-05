@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#fbfaf7"/>
+  <text x="64" y="76" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#12151c">Planner - Executor split</text>
+  <text x="66" y="118" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#5d6470">Long tasks need a high-level strategy and a low-level mouse-keyboard operator.</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="90" y="180" width="430" height="340" rx="18" fill="#fff3db" stroke="#e09f2e" stroke-width="4"/>
+    <text x="132" y="240" font-size="34" font-weight="800" fill="#12151c">Planner</text>
+    <text x="132" y="292" font-size="22" fill="#12151c">Break the goal into subtasks</text>
+    <text x="132" y="334" font-size="22" fill="#12151c">Choose tools and skills</text>
+    <text x="132" y="376" font-size="22" fill="#12151c">Decide when to ask for help</text>
+    <text x="132" y="430" font-size="19" fill="#4b5360">Example: log in, search order,</text>
+    <text x="132" y="458" font-size="19" fill="#4b5360">export CSV, verify the result.</text>
+    <rect x="680" y="180" width="430" height="340" rx="18" fill="#e8f0fe" stroke="#1c5fd4" stroke-width="4"/>
+    <text x="722" y="240" font-size="34" font-weight="800" fill="#12151c">Executor</text>
+    <text x="722" y="292" font-size="22" fill="#12151c">Locate UI target</text>
+    <text x="722" y="334" font-size="22" fill="#12151c">Click, type, scroll, hotkey</text>
+    <text x="722" y="376" font-size="22" fill="#12151c">Wait and observe again</text>
+    <text x="722" y="430" font-size="19" fill="#4b5360">Example: click the export button</text>
+    <text x="722" y="458" font-size="19" fill="#4b5360">at the current coordinates.</text>
+  </g>
+  <g stroke="#12151c" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M520 300 C580 260 620 260 680 300"/>
+    <path d="M652 282 L680 300 L650 315"/>
+    <path d="M680 400 C620 446 580 446 520 400"/>
+    <path d="M548 416 L520 400 L550 385"/>
+  </g>
+  <text x="555" y="246" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#12151c">subtask</text>
+  <text x="532" y="478" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#12151c">status / failure</text>
+</svg>
