@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#fbfaf7"/>
+  <text x="64" y="76" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#12151c">GUI Agent control loop</text>
+  <text x="66" y="118" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#5d6470">A computer agent is a feedback controller, not a one-shot chatbot.</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">
+    <rect x="90" y="240" width="180" height="92" rx="12" fill="#e8f0fe" stroke="#1c5fd4" stroke-width="3"/>
+    <text x="139" y="296" fill="#12151c">Observe</text>
+    <rect x="360" y="240" width="180" height="92" rx="12" fill="#e9f8f2" stroke="#16a085" stroke-width="3"/>
+    <text x="414" y="296" fill="#12151c">Understand</text>
+    <rect x="630" y="240" width="180" height="92" rx="12" fill="#fff3db" stroke="#e09f2e" stroke-width="3"/>
+    <text x="687" y="296" fill="#12151c">Plan</text>
+    <rect x="900" y="240" width="180" height="92" rx="12" fill="#ffe8e8" stroke="#e05a5a" stroke-width="3"/>
+    <text x="956" y="296" fill="#12151c">Act</text>
+  </g>
+  <g stroke="#12151c" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M270 286 H350"/>
+    <path d="M338 268 L360 286 L338 304"/>
+    <path d="M540 286 H620"/>
+    <path d="M608 268 L630 286 L608 304"/>
+    <path d="M810 286 H890"/>
+    <path d="M878 268 L900 286 L878 304"/>
+    <path d="M990 332 V448 H180 V342"/>
+    <path d="M162 365 L180 342 L198 365"/>
+  </g>
+  <rect x="190" y="430" width="820" height="92" rx="14" fill="#ffffff" stroke="#c8ced8" stroke-width="3"/>
+  <text x="244" y="486" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#12151c">Feedback: new screenshot, changed state, error message, task success signal</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#5d6470">
+    <text x="110" y="366">screenshot / DOM / OCR / a11y tree</text>
+    <text x="382" y="366">state, goal, affordances</text>
+    <text x="652" y="366">next step or subtask</text>
+    <text x="928" y="366">click, type, scroll</text>
+  </g>
+</svg>
